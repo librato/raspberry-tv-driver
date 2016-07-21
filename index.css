@@ -1,0 +1,382 @@
+/* ::::: https://metrics.librato.com/assets/auth-7570d51535cfd14259c817e2c35a6f11.css ::::: */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-feature-settings: inherit;
+    font-language-override: inherit;
+    font-kerning: inherit;
+    font-synthesis: inherit;
+    font-variant: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html {
+    line-height: 1;
+}
+q::before,
+q::after,
+blockquote::before,
+blockquote::after {
+    content: none;
+}
+a img {
+    border: medium none;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0px;
+}
+html {
+    font-family: sans-serif;
+}
+body {
+    margin: 0px;
+}
+a {
+    background: transparent none repeat scroll 0% 0%;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:active,
+a:hover {
+    outline: 0px none;
+}
+img {
+    border: 0px none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0px;
+}
+button,
+input {
+    line-height: normal;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0px;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0px none;
+    padding: 0px;
+}
+body {} .l-margin-top-1 {
+    margin-top: 1em ! important;
+}
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Proxima Nova";
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 800;
+}
+body {
+    background-color: rgb(38, 38, 38);
+    color: rgb(38, 38, 38);
+    font-family: "Proxima Nova", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.3em;
+}
+a {
+    color: rgb(15, 128, 170);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+html,
+body,
+#container,
+#container #content {
+    height: 100%;
+}
+body {
+    background-image: url('https://metrics.librato.com/assets/spaces/space.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body::before {
+    position: absolute;
+    content: " ";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#container {
+    width: 100%;
+    z-index: 1;
+}
+#container #content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#auth-form-container {
+    position: relative;
+}
+#auth-form {
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+}
+#auth-form form {
+    padding: 2rem 2rem;
+}
+#auth-form #logo {
+    margin-top: 2rem;
+    text-align: center;
+}
+#auth-form .goto_confirm,
+#auth-form .goto_signin {
+    display: block;
+}
+#auth-form-container {
+    width: 80%;
+}
+#auth-form {
+    height: inherit;
+}
+#auth-form form input[type="text"],
+#auth-form form input[type="email"],
+#auth-form form input[type="password"] {
+    width: 100%;
+    margin-top: 10px;
+}
+#auth-form form input[type="checkbox"] {
+    display: inline;
+}
+#auth-form button[type="submit"] {
+    font-size: 21px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+#auth-form label.hidden {
+    position: absolute;
+    font: 0px/0 serif;
+    text-shadow: none;
+    color: transparent;
+}
+#auth-form #logo {
+    display: block;
+}
+#auth-form #forgot {
+    display: block;
+    margin: 8px 0px 10px;
+}
+#auth-form .remember {
+    margin-bottom: 5px;
+}
+button,
+a {
+    border: medium none;
+    background: transparent none repeat scroll 0% 0%;
+    padding: 0px;
+    margin: 0px;
+}
+a.librato,
+button.librato {
+    color: rgb(255, 255, 255);
+    border: medium none;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgb(13, 129, 171);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+a.librato.blue,
+button.librato.blue {
+    background-color: rgb(13, 129, 171);
+}
+a.librato.blue:hover,
+button.librato.blue:hover {
+    background-color: rgb(9, 93, 124);
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-size: 13px;
+    padding: 4px 10px;
+    font-family: "Proxima Nova Regular", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+input {
+    border: medium none;
+    height: 2.2em;
+    padding: 0em 0.75em;
+    width: 100%;
+}
+input[type="email"],
+input[type="password"] {
+    font-family: "Proxima Nova", Helvetica, sans-serif;
+    font-weight: 100;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 5px;
+    height: 2em;
+    padding: 0px 1em;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    height: auto;
+    padding: 0em;
+    width: auto;
+}
+label {
+    display: inline-block;
+}
+#forgot,
+#remember {
+    text-align: left;
+}
+.uv-scale-top,
+.uv-scale-top-left,
+.uv-scale-top-right,
+.uv-scale-bottom,
+.uv-scale-bottom-left,
+.uv-scale-bottom-right,
+.uv-scale-right,
+.uv-scale-right-top,
+.uv-scale-right-bottom,
+.uv-scale-left,
+.uv-scale-left-top,
+.uv-scale-left-bottom,
+.uv-slide-top,
+.uv-slide-bottom,
+.uv-slide-left,
+.uv-slide-right {
+    opacity: 1;
+    transition: all 80ms ease-out 0s;
+}
