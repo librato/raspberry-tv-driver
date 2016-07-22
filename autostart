@@ -1,0 +1,7 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+#don't sleep https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=144833
+@xset s 0 0
+@xset s noblank
+@xset s noexpose
+@xset dpms 0 0 0
