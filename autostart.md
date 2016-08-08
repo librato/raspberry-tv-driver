@@ -21,3 +21,15 @@ xdotool search --onlyvisible --name iceweasel key F5
 
 The script launches Iceweasel in the background with the URL, then waits for it to 
 finish loading and then uses xdotool to simulate the pressing of the F5 key.
+
+##Don't use the screensaver
+Configure autostart instead to look like this:
+```
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xset s 0 0
+@xset s noblank
+@xset s noexpose
+@xset dpms 0 0 0
+@sh /home/pi/start.sh
+```
