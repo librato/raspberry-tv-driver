@@ -11,8 +11,8 @@ echo "----- installing xdotool"
 #Xdotool allows key stroke generation to put iceweasel into full screen with F11
 sudo apt-get -y install xdotool
 #Generic things:
-echo "----- installing screen saver"
-sudo apt-get -y install xscreensaver
+#echo "----- installing screen saver"
+#sudo apt-get -y install xscreensaver
 echo "----- installing unclutter"
 sudo apt-get -y install unclutter
 echo "----- installing NGINX"
