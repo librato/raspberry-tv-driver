@@ -32,4 +32,5 @@ When all is set and done you can clone SD cards with [rpi-clone](https://github.
 After cloning is complete, boot up the cloned Pi and change the hostname with `raspi-conf`.
 
 #Stlying
-Add [Style Script plugin](https://addons.mozilla.org/en-US/firefox/addon/custom-style-script/?src=ss) to Iceweasel
+You can use CSS browser plugins to force Spaces to use a dark theme. For example [Stylish](https://https://userstyles.org) has plugins for Chrome, Firefox, and Safari. It allows you to map specific URLs to custom CSS. Stylish has a social aspect to it; users can share CSS themes. I added a couple of [Librato Spaces themes](https://userstyles.org/styles/browse?search_terms=librato).
+There's also the [Style Script plugin](https://addons.mozilla.org/en-US/firefox/addon/custom-style-script/?src=ss) that works on iceweasel. 
