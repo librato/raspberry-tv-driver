@@ -16,7 +16,7 @@ switches it to fullscreen:
 ```
 iceweasel https://metrics.librato.com/s/public/js1ddxq6c &
 sleep 60
-xdotool search --onlyvisible --name iceweasel key F5
+xdotool search --onlyvisible --name iceweasel key F11
 ```
 
 The script launches Iceweasel in the background with the URL, then waits for it to 
