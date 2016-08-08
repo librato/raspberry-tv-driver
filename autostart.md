@@ -20,7 +20,7 @@ xdotool search --onlyvisible --name iceweasel key F11
 ```
 
 The script launches Iceweasel in the background with the URL, then waits for it to 
-finish loading and then uses xdotool to simulate the pressing of the F5 key.
+finish loading and then uses xdotool to simulate the pressing of the F11 key.
 
 ##Don't use the screensaver
 Configure autostart instead to look like this:
