@@ -16,10 +16,8 @@ sudo insserv avahi-daemon
 
 ## Create configuration files for Avahi
 
-```shell
-sudo nano /etc/avahi/services/multiple.service
-```
-...with this content:
+Create `/etc/avahi/services/multiple.service` with this content:
+
 ```xml
 <?xml version="1.0" standalone='no'?>
 <!DOCTYPE service-group SYSTEM "avahi-service.dtd">
@@ -37,9 +35,7 @@ sudo nano /etc/avahi/services/multiple.service
 ```
 Add a service so that the pi can be discovered on the network:
 
-`sudo nano /etc/avahi/services/rfb.service`
-
-..with this content:
+Create `/etc/avahi/services/rfb.service` with this content:
 
 ```xml
 <?xml version="1.0" standalone='no'?><!--*-nxml-*-->
