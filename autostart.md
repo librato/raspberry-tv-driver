@@ -16,11 +16,12 @@ switches it to fullscreen:
 ```
 iceweasel https://metrics.librato.com/s/public/js1ddxq6c &
 sleep 60
-xdotool search --onlyvisible --name iceweasel key F11
+xdotool search --onlyvisible --name firefox key F11
 ```
 
 The script launches Iceweasel in the background with the URL, then waits for it to 
 finish loading and then uses xdotool to simulate the pressing of the F11 key.
+It used to work with `iceweasel` but stopped working. Now it works with `firefox`.
 
 ##Don't use the screensaver
 Configure autostart instead to look like this:
