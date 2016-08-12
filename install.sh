@@ -25,6 +25,8 @@ sudo mv part2.html /home/pi/
 sudo mv http_server.py /home/pi
 sudo mv index.css /var/www/html/
 echo "----- setting up Avahi"
+sudo apt-get -y install avahi-daemon avahi-dnsconfd avahi-discover avahi-utils
+sudo apt-get -y install libnss-mdns
 cd /home/pi/raspberry-iceweasel/avahi_services
 sudo insserv avahi-daemon/
 sudo mv multiple.service /etc/avahi/services/
