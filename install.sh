@@ -23,19 +23,19 @@ sudo mv part2.html /home/pi/
 sudo mv http_server.py /home/pi
 sudo mv index.css /var/www/html/
 echo "----- setting up Avahi"
-cd /home/pi/raspberry-pi/avahi_services
+cd /home/pi/raspberry-iceweasel/avahi_services
 sudo insserv avahi-daemon/
 sudo mv multiple.service /etc/avahi/services/
 sudo mv rfb.service /etc/avahi/services/
 sudo /etc/init.d/avahi-daemon restart
-cd /home/pi/raspberry-pi
+cd /home/pi/raspberry-iceweasel
 echo "----- setting up startup"
 sudo mv startup /etc/init.d/
 cd /etc/init.d/
 sudo chmod +x startup
 sudo update-rc.d startup defaults
 echo "----- setting up vnc"
-cd /home/pi/raspberry-pi
+cd /home/pi/raspberry-iceweasel
 sudo bash installx11vnc.sh
 cd /home/pi
 echo "...all done."
