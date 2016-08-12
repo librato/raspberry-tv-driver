@@ -1,4 +1,6 @@
 #IceWeasel browser specific
+echo "----- update system"
+sudo apt-get update
 echo "----- installing iceweasel"
 sudo apt-get -y install iceweasel
 #run iceweasel to create a profile
