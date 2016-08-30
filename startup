@@ -12,7 +12,7 @@
 ### END INIT INFO
 
 #create the index.html file by concatenating part1.html, the line with the hostname and part2.html
-sudo rm /var/www/html/index.html
+sudo rm /var/www/html/index*.html
 sudo touch /var/www/html/index.html
 sudo chown "pi:pi" /var/www/html/index.html
 cat /home/pi/part1.html > /var/www/html/index.html
