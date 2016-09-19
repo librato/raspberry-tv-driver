@@ -6,10 +6,18 @@ I have set up my Pi to run Iceweasel on startup. To enable that edit
 ```
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
-@xscreensaver -no-splash
+@xset s 0 0
+@xset s noblank
+@xset s noexpose
+@xset dpms 0 0 0
 @sh /home/pi/start.sh
 ```
 
+This includes commands that are supposed to stop the Pi from sleeping. `xset s off` disables the screen saver, 
+`xset dpms` disables the DPMS (Display Power Management Signaling) and `xset s noblank` tells to X server to not 
+blank the video device.
+
+##Start.sh
 In `start.sh` I created a script that launches Iceweasel to a specific URL and 
 switches it to fullscreen:
 
@@ -23,14 +31,10 @@ The script launches Iceweasel in the background with the URL, then waits for it 
 finish loading and then uses xdotool to simulate the pressing of the F11 key.
 It used to work with `iceweasel` but stopped working. Now it works with `firefox`.
 
-##Don't use the screensaver
-Configure autostart instead to look like this:
+##Disabling the blank screen forever
+If you want to disable the blank screen at every startup, just update the /etc/lightdm/lightdm.conf file and add in the [SeatDefaults] section the following command:
+
 ```
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-@xset s 0 0
-@xset s noblank
-@xset s noexpose
-@xset dpms 0 0 0
-@sh /home/pi/start.sh
+[SeatDefaults]
+xserver-command=X -s 0 -dpms
 ```
