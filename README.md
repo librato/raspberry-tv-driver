@@ -9,8 +9,9 @@
 
 #To display a web page on the TV:
 
-Note: You need to be on the wired network. It will not work if you are on the SolarWinds or Guest wifi networks.
-- Go to `<pi-hostname>.local` and a form will allow you to input a URL. That will start a chromium session with that URL.
+Note: Your network has to support mDNS. Some corporate networks will block that.
+
+- Go to `<pi-hostname>.local` and a form will allow you to input a URL. That will start a broswer session with that URL.
 - Use terminal: `curl --data "url=https://www.librato.com" <pi-hostname>.local:8000`
 
 #Fast setup
