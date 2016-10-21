@@ -22,7 +22,7 @@ In `start.sh` I created a script that launches Iceweasel to a specific URL and
 switches it to fullscreen:
 
 ```
-iceweasel https://metrics.librato.com/s/public/js1ddxq6c &
+iceweasel clocktab.com &
 sleep 60
 xdotool search --onlyvisible --name firefox key F11
 ```
