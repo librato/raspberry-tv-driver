@@ -1,16 +1,16 @@
-#IceWeasel browser specific
+#Firefox browser specific
 echo "----- update system"
 sudo apt-get update
-echo "----- installing iceweasel"
-sudo apt-get -y install iceweasel
-#run iceweasel to create a profile
-iceweasel
-echo "----- installing iceweasel config"
+echo "----- installing firefox"
+sudo apt-get -y install firefox-esr
+#run firefox to create a profile
+firefox --display=:0
+echo "----- installing browser profile"
 #Grab default profile directory name and add user.js file - that disables recovery on crash
-icedir=$(ls /home/pi/.mozilla/firefox | grep .default)
-sudo mv user.js /home/pi/.mozilla/firefox/$icedir/
+browserdir=$(ls /home/pi/.mozilla/firefox | grep .default)
+sudo mv user.js /home/pi/.mozilla/firefox/$browserdir/
 echo "----- installing xdotool"
-#Xdotool allows key stroke generation to put iceweasel into full screen with F11
+#Xdotool allows key stroke generation to put firefox into full screen with F11
 sudo apt-get -y install xdotool
 #Generic things:
 #echo "----- installing screen saver"
@@ -27,19 +27,19 @@ sudo mv index.css /var/www/html/
 echo "----- setting up Avahi"
 sudo apt-get -y install avahi-daemon avahi-dnsconfd avahi-discover avahi-utils
 sudo apt-get -y install libnss-mdns
-cd /home/pi/raspberry-iceweasel/avahi_services
+cd /home/pi/raspberry-tv-driver/avahi_services
 sudo insserv avahi-daemon/
 sudo mv multiple.service /etc/avahi/services/
 sudo mv rfb.service /etc/avahi/services/
 sudo /etc/init.d/avahi-daemon restart
-cd /home/pi/raspberry-iceweasel
+cd /home/pi/raspberry-tv-driver
 echo "----- setting up startup"
 sudo mv startup /etc/init.d/
 cd /etc/init.d/
 sudo chmod +x startup
 sudo update-rc.d startup defaults
 echo "----- setting up vnc"
-cd /home/pi/raspberry-iceweasel
+cd /home/pi/raspberry-tv-driver
 sudo bash installx11vnc.sh
 cd /home/pi
 echo "...all done."
