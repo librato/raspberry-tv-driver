@@ -1,4 +1,4 @@
-#Rasberry Pi as TV controller (IceWeasel version)
+#Rasberry Pi as TV controller
 
 - Buy the meanest and leanest raspberry pi you can get. I got the Raspberry Pi 2 Model B with a 900MHz quad-core ARM Cortex-A7 CPU and 1GB RAM.
 - Iceweasel. 
