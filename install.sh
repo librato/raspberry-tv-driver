@@ -4,7 +4,7 @@ sudo apt-get update
 echo "----- installing firefox"
 sudo apt-get -y install firefox-esr
 #run firefox to create a profile
-firefox --display=:0
+firefox --display=:0 &
 echo "----- installing browser profile"
 #Grab default profile directory name and add user.js file - that disables recovery on crash
 browserdir=$(ls /home/pi/.mozilla/firefox | grep .default)
