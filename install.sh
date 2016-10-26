@@ -28,7 +28,7 @@ echo "----- setting up Avahi"
 sudo apt-get -y install avahi-daemon avahi-dnsconfd avahi-discover avahi-utils
 sudo apt-get -y install libnss-mdns
 cd /home/pi/raspberry-tv-driver/avahi_services
-sudo insserv avahi-daemon/
+sudo insserv avahi-daemon
 sudo mv multiple.service /etc/avahi/services/
 sudo mv rfb.service /etc/avahi/services/
 sudo /etc/init.d/avahi-daemon restart
