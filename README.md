@@ -17,16 +17,16 @@ Note: Your network has to support mDNS. Some corporate networks will block that.
 #Fast setup
 
 1. Install Raspbian Jessie.
-2. Launch `sudo raspi-conf` and 
+1. Launch `sudo raspi-conf` and 
   1. Expand the filesystem
   2. Set time zone, language, keyboard
   2. Activate SSH access
   3. Change the hostname
   4. Set to auto-login directly to startx
-3. clone this repo and cd into it
-4. run install.sh (may have to chmod +x it first)
-6. Disable the screensaver in the desktop UI.
-7. Set the [screen resolution](http://elinux.org/RPiconfig ): edit `/boot/config.txt`. [This configuration](https://gist.github.com/niklibrato/305a1891ffa71ac2edfb) works for me.
+1. clone this repo and cd into it
+1. run `sudo bash install.sh`
+1. Set the [screen resolution](http://elinux.org/RPiconfig ): edit `/boot/config.txt`. [This configuration](https://gist.github.com/niklibrato/305a1891ffa71ac2edfb) works for me.
+1. Last but not least, check the [autostart.md](autostart.md) file for ideas on auto-starting the browser to a specific URL and settings to stop the Pi from sleeping
 
 #Cloning
 When all is set and done you can clone SD cards with [rpi-clone](https://github.com/billw2/rpi-clone). 
