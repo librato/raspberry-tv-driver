@@ -1,10 +1,14 @@
+#!/bin/bash
+export DISPLAY=:0
 #Firefox browser specific
 echo "----- update system"
 sudo apt-get update
+echo "----- install jq"
+sudo apt-get -y install jq
 echo "----- installing firefox"
 sudo apt-get -y install firefox-esr
 #run firefox to create a profile
-firefox --display=:0 &
+firefox google.com &
 echo "----- installing browser profile"
 #Grab default profile directory name and add user.js file - that disables recovery on crash
 browserdir=$(ls /home/pi/.mozilla/firefox | grep .default)
