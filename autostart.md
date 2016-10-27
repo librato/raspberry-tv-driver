@@ -22,6 +22,8 @@ In `start.sh` I created a script that launches Iceweasel to a specific URL and
 switches it to fullscreen:
 
 ```
+#!/bin/bash
+export DISPLAY=:0
 firefox clocktab.com &
 sleep 60
 xdotool search --onlyvisible --name firefox key F11
