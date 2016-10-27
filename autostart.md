@@ -40,7 +40,7 @@ As the `start.sh` script use:
 #!/bin/bash
 export DISPLAY=:0
 sleep 10
-mapping=$(curl -H 'Authorization: token YOU_TOKEN_HERE' -H 'Accept: application/vnd.github.v3.raw' -L https://api.github.com/repos/YOUR_ORGANIZATION/YOUR_REPO_NAME/contents/PATH/TO/JSON/FILE)
+mapping=$(curl -H 'Authorization: token YOUR_TOKEN_HERE' -H 'Accept: application/vnd.github.v3.raw' -L https://api.github.com/repos/YOUR_ORGANIZATION/YOUR_REPO_NAME/contents/PATH/TO/JSON/FILE)
 my_hostname=$(hostname)
 url=$(echo $mapping | jq -r ".${my_hostname}")
 firefox $url &
