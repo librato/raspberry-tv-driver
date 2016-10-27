@@ -1,6 +1,6 @@
 #Launch programs on startup
 
-I have set up my Pi to run Iceweasel on startup. To enable that edit 
+To launch programs on startup edit: 
 `~/.config/lxsession/LXDE-pi/autostart`. Mine looks like this:
 
 ```
