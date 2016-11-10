@@ -4,6 +4,8 @@ echo "----- update system"
 sudo apt-get update
 echo "----- install jq"
 sudo apt-get -y install jq
+echo "----- install httping"
+sudo apt-get -y install httping
 echo "----- installing firefox"
 sudo apt-get -y install firefox-esr
 #run firefox to create a profile
