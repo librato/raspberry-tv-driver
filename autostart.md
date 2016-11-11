@@ -58,3 +58,8 @@ If you want to disable the blank screen at every startup, just update the /etc/l
 [SeatDefaults]
 xserver-command=X -s 0 -dpms
 ```
+##Changing the desktop logo via the command line
+- Copy an image file to the pi, e.g. using `scp my_image.png pi@hostname.local:`. That will copy it to the home directory.
+- Edit the desktop config file `.config/pcmanfm/LXDE-pi/desktop-items-0.conf`:
+ - Comment out the `wallpaper=/usr/share/raspberrypi-artwork/raspberry-pi-logo-small.png` line
+ - Assign `wallpaper` to your image file: `wallpaper=/home/pi/my_image.png`
