@@ -19,9 +19,7 @@ echo ">>> installing xdotool"
 #Xdotool allows key stroke generation to put firefox into full screen with F11
 sudo apt-get -y install xdotool
 #Generic things:
-#echo ">>> installing screen saver"
-#sudo apt-get -y install xscreensaver
-echo ">>> installing unclutter"
+echo "----- installing unclutter"
 sudo apt-get -y install unclutter
 echo ">>> installing NGINX"
 sudo apt-get -y install nginx
@@ -48,4 +46,8 @@ echo ">>> setting up vnc"
 cd /home/pi/raspberry-tv-driver
 sudo bash installx11vnc.sh
 cd /home/pi
-echo "...all done."
+echo "----- stop Raspberry from sleeping"
+sudo mv autostart /home/pi/.config/lxsession/LXDE-pi/
+sudo chown pi:pi /home/pi/.config/lxsession/LXDE-pi/autostart
+echo "...all done. rebooting"
+sudo reboot
