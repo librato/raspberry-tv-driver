@@ -5,7 +5,7 @@ creates a usable Internet Protocol (IP) network without manual operator interven
 
 [Avahi](http://en.wikipedia.org/wiki/Avahi_(software)) is an implementation of zeroconf which ships with most Linux 
 and BSD distributions, but _not_ the Pi's Debian distro. Zeroconf will be familiar to Apple users as *Bonjour*. 
-Once the Pi is set up, you will be able to address it as `raspberrypi.local` regardless of the IP address.
+Once the Pi is set up, you will be able to address it as `<hostname>.local` regardless of the IP address.
 
 ##Install Avahi
  
@@ -16,10 +16,8 @@ sudo insserv avahi-daemon
 
 ## Create configuration files for Avahi
 
-```shell
-sudo nano /etc/avahi/services/multiple.service
-```
-...with this content:
+Create `/etc/avahi/services/multiple.service` with this content:
+
 ```xml
 <?xml version="1.0" standalone='no'?>
 <!DOCTYPE service-group SYSTEM "avahi-service.dtd">
@@ -37,9 +35,7 @@ sudo nano /etc/avahi/services/multiple.service
 ```
 Add a service so that the pi can be discovered on the network:
 
-`sudo nano /etc/avahi/services/rfb.service`
-
-..with this content:
+Create `/etc/avahi/services/rfb.service` with this content:
 
 ```xml
 <?xml version="1.0" standalone='no'?><!--*-nxml-*-->
@@ -57,6 +53,12 @@ Add a service so that the pi can be discovered on the network:
 
 `sudo /etc/init.d/avahi-daemon restart`
 
-The Pi should now be addressable from other machines as `raspberrypi.local` so you can SSH into the Pi using:
+The Pi should now be addressable from other machines as `<hostname>.local`. For example if the hostname is `raspberrypi` you can SSH into the Pi using:
 
 `ssh pi@raspberrypi.local`
+
+The hostname can be changed using the configuration utility
+
+```shell
+sudo raspi-config
+```
