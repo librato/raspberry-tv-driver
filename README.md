@@ -16,7 +16,7 @@ Note: Your network has to support mDNS. Some corporate networks will block that.
 
 # Fast setup
 
-1. Install Raspbian Jessie.
+1. [Install Raspbian Jessie](https://howchoo.com/g/zthlmgy2yzn/how-to-install-raspbian-jessie-on-the-raspberry-pi).
 1. Launch `sudo raspi-conf` and 
   1. Expand the filesystem
   2. Set time zone, language, keyboard
