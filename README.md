@@ -23,7 +23,7 @@ Note: Your network has to support mDNS. Some corporate networks will block that.
   2. Activate SSH access
   3. Change the hostname
   4. Set to auto-login directly to startx
-1. clone this repo and cd into it
+1. Clone this repo and cd into it
 1. run `sudo bash install.sh`
 1. Set the [screen resolution](http://elinux.org/RPiconfig ): edit `/boot/config.txt`. [This configuration](config.txt) works for me.
 1. Last but not least, check the [autostart.md](autostart.md) file for ideas on auto-starting the browser to a specific URL and settings to stop the Pi from sleeping
