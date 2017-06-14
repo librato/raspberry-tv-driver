@@ -47,6 +47,7 @@ cd /home/pi/raspberry-tv-driver
 sudo bash installx11vnc.sh
 cd /home/pi
 echo "----- stop Raspberry from sleeping"
+cd /home/pi/raspberry-tv-driver
 sudo mv autostart /home/pi/.config/lxsession/LXDE-pi/
 sudo chown pi:pi /home/pi/.config/lxsession/LXDE-pi/autostart
 echo "...all done. rebooting"
