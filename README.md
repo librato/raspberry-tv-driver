@@ -11,17 +11,17 @@
 
 Note: Your network has to support mDNS. Some corporate networks will block that.
 
-- Via browser: Go to `<pi-hostname>.local` and a form will allow you to input a URL. That will start a broswer session with that URL.
-- Via terminal: `curl --data "url=https://www.librato.com" <pi-hostname>.local:8000`
+- Via browser: Go to `<pi-hostname>.local` and a form will allow you to input a URL. That will start a browser session with that URL.
+- Via terminal: `curl --data "url=https://my.appoptics.com" <pi-hostname>.local:8000`
 
 # Fast setup
 
-1. [Install Raspbian Jessie](https://howchoo.com/g/zthlmgy2yzn/how-to-install-raspbian-jessie-on-the-raspberry-pi).
+1. [Install Raspbian](https://www.raspberrypi.org/documentation/installation/installing-images/).
 1. Launch `sudo raspi-conf` and 
   1. Expand the filesystem
   2. Set time zone, language, keyboard
   2. Activate SSH access
-  3. Change the hostname
+  3. Change the hostname to something you can remember
   4. Set to auto-login directly to startx
 1. Clone this repo and cd into it
 1. Run `sudo bash install.sh`
