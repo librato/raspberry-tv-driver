@@ -11,8 +11,8 @@
 
 Note: Your network has to support mDNS. Some corporate networks will block that.
 
-- Go to `<pi-hostname>.local` and a form will allow you to input a URL. That will start a broswer session with that URL.
-- Use terminal: `curl --data "url=https://www.librato.com" <pi-hostname>.local:8000`
+- Via browser: Go to `<pi-hostname>.local` and a form will allow you to input a URL. That will start a broswer session with that URL.
+- Via terminal: `curl --data "url=https://www.librato.com" <pi-hostname>.local:8000`
 
 # Fast setup
 
