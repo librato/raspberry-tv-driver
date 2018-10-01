@@ -32,8 +32,9 @@ Note: Your network has to support mDNS. Some corporate networks will block that.
 When all is set and done you can clone SD cards with [rpi-clone](https://github.com/billw2/rpi-clone). 
 After cloning is complete, boot up the cloned Pi and change the hostname with `raspi-conf`.
 
-# Stlying
-You can use CSS browser plugins to force Spaces to use a dark theme. For example [Stylish](https://userstyles.org) has plugins for Chrome, Firefox, and Safari. It allows you to map specific URLs to custom CSS. Stylish has a social aspect to it; users can share CSS themes. I added a couple of [Librato Spaces themes](https://userstyles.org/styles/browse?search_terms=librato).
-There's also the [Style Script plugin](https://addons.mozilla.org/en-US/firefox/addon/custom-style-script/?src=ss) that works on iceweasel. 
+# Useful stuff
+## Cron Jobs
+To run scheduled tasks you can use [crontab](https://www.raspberrypi.org/documentation/linux/usage/cron.md)
+## Run scripts on startup
+To run scripts on startup, you can configure your [autostart](autostart.md) to launch a script. 
 
-**Note** the Styling paragraph was written for Librato. AppOptics now supports dark themed dashboards.
