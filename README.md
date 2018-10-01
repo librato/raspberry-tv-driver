@@ -38,5 +38,5 @@ To run scheduled tasks you can use [crontab](https://www.raspberrypi.org/documen
 ## Run scripts on startup
 To run scripts on startup, you can configure your [autostart](autostart.md) to launch a script. 
 ## Temperature probe
-Turn your Raspberry pi into a [tempreature probe](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing/overview) and send the data to AppOptics.
+Turn your Raspberry pi into a [tempreature probe](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing/overview) and [send the data to AppOptics](temperature.md).
 
