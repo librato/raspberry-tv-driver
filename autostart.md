@@ -1,4 +1,4 @@
-#Launch programs on startup
+# Launch programs on startup
 
 To launch programs on startup edit: 
 `~/.config/lxsession/LXDE-pi/autostart`. Mine looks like this:
