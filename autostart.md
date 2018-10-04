@@ -47,6 +47,19 @@ firefox $url &
 sleep 20
 xdotool search --onlyvisible --name firefox key F11
 ```
+or if you're using Chromium...
+
+```
+#!/bin/bash
+export DISPLAY=:0
+sleep 10
+mapping=$(curl -H 'Authorization: token YOUR_TOKEN_HERE' -H 'Accept: application/vnd.github.v3.raw' -L https://api.github.com/repos/YOUR_ORGANIZATION/YOUR_REPO_NAME/contents/PATH/TO/JSON/FILE)
+my_hostname=$(hostname)
+url=$(echo $mapping | jq -r ".${my_hostname}")
+chromium-browswer --incognito $url &
+sleep 20
+xdotool search --onlyvisible --name firefox key F11
+```
 
 The script launches Firefox in the background with the URL, then waits for it to 
 finish loading and then uses xdotool to simulate the pressing of the F11 key to go full screen.

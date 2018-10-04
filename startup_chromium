@@ -1,0 +1,29 @@
+#!/bin/bash
+# /etc/init.d/startup
+
+### BEGIN INIT INFO
+# Provides:          startup
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Example initscript
+# Description:       This service is used to start a web server
+### END INIT INFO
+
+#create the index.html file by concatenating part1.html, the line with the hostname and part2.html
+sudo rm /var/www/html/index*.html
+sudo touch /var/www/html/index.html
+sudo chown "pi:pi" /var/www/html/index.html
+cat /home/pi/part1.html > /var/www/html/index.html
+my_hostname=$(hostname)
+echo "<form accept-charset=\"UTF-8\" action=\"http://$my_hostname.local:8000\" method=\"post\">" >> /var/www/html/index.html
+cat /home/pi/part2.html >> /var/www/html/index.html
+echo "index.html created in /var/www/html folder"
+
+#launch http server
+sleep 10
+sudo -u pi python /home/pi/http_server_chromium.py &
+echo "http_server_chromium.py launched"
+
+exit 0

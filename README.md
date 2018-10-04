@@ -26,7 +26,7 @@ When you submit a URL, the pi will launch Firefox with that url, wait for a bit,
   3. Change the hostname to something you can remember
   4. Set to auto-login directly to startx
 1. Clone this repo and cd into it
-1. Run `sudo bash install.sh`
+1. Run `sudo bash install.sh` if you want firefox or `sudo bash install-chromium.sh` if you want Chromium (recommended).
 1. Set the [screen resolution](http://elinux.org/RPiconfig ): edit `/boot/config.txt`. [This configuration](config.txt) works for me.
 1. Last but not least, check the [autostart.md](autostart.md) file for ideas on auto-starting the browser to a specific URL and settings to stop the Pi from sleeping
 
