@@ -30,8 +30,8 @@ class ServerHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
         url = str(form.getvalue("url"))
         #kill all browswer instances
         process = subprocess.call(["sudo", "/usr/bin/pkill", "-f", "chromium-browser"])
-        #start browser with url
-        web_command = ['chromium-browser',url]
+        #start browser with url without doing the default browser check
+        web_command = ['chromium-browser',' --no-default-browser-check',url]
         print "Running > ", web_command, " < as a sub process"
         subprocess.Popen(web_command )
         print "zzzzzzz....."
