@@ -1,5 +1,5 @@
 #!/bin/bash
-#Firefox browser specific
+#Chromium browser specific
 echo ">>> update system"
 sudo apt-get update
 echo ">>> install jq"
